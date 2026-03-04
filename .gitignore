@@ -5,3 +5,4 @@ venv/
 *.csv
 *.pdf
 .vscode/
+core/config/settings.py
