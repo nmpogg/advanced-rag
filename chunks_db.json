@@ -1,0 +1,254 @@
+[
+    {
+        "id": 0,
+        "content": "Tổng  hợp  Kiến  thức  Xử  lý  Ảnh  số  \nTài  liệu  ôn  tập  các  khái  niệm  cơ  bản  về  mô  hình  màu,  xử  lý  ảnh  raster/vector,  các  thuật  toán  \nphát\n \nhiện\n \nbiên,\n \nphân\n \nvùng\n \nvà\n \nnén\n \nảnh.\n \nPhần  1:  Các  Khái  niệm  Cơ  bản  &  Mô  hình  1.1(A)  Mô  hình  màu  là  gì?  Liệt  kê  một  vài  mô  hình  màu  thông  dụng.  \nĐịnh  nghĩa:  Một  mô  hình  màu  (color  model),  hay  còn  gọi  là  không  gian  màu  (color  space),  là  một  hệ  thống  \ntọa\n \nđộ\n \nvà\n \nmột\n \nkhông\n \ngian\n \ncon\n \ntrong\n \nhệ\n \nthống\n \nđó,\n \nnơi\n \nmỗi\n \nmàu\n \nsắc\n \nđược\n \nbiểu\n \ndiễn\n \nbởi\n \nmột\n \nđiểm\n \nduy\n \nnhất.\n \nMục\n \nđích\n \ncủa\n \nmô\n \nhình\n \nmàu\n \nlà\n \nđể\n \ntạo\n \nđiều\n \nkiện\n \nthuận\n \nlợi\n \ncho\n \nviệc\n \nđặc\n \ntả\n \nmàu\n \nsắc\n \ntheo\n \nmột\n \ntiêu\n \nchuẩn\n \nđã\n \nđược\n \nchấp\n \nnhận\n \nchung.",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 0,
+            "page_label": "1"
+        }
+    },
+    {
+        "id": 1,
+        "content": "điểm\n \nduy\n \nnhất.\n \nMục\n \nđích\n \ncủa\n \nmô\n \nhình\n \nmàu\n \nlà\n \nđể\n \ntạo\n \nđiều\n \nkiện\n \nthuận\n \nlợi\n \ncho\n \nviệc\n \nđặc\n \ntả\n \nmàu\n \nsắc\n \ntheo\n \nmột\n \ntiêu\n \nchuẩn\n \nđã\n \nđược\n \nchấp\n \nnhận\n \nchung.\n Các  mô  hình  màu  thông  dụng:  ●  RGB  (Red,  Green,  Blue):  Dùng  cho  màn  hình,  cảm  biến  màu.  ●  CMY  (Cyan,  Magenta,  Yellow)  và  CMYK  (thêm  Black):  Dùng  cho  in  ấn  màu.  ●  HSI  (Hue,  Saturation,  Intensity):  Dùng  cho  việc  mô  tả  màu  sắc  theo  cảm  nhận  của  con  \nngười.\n \n1.2(A)  Mô  hình  màu  CMY  là  gì?  CMY  khác  RGB  ở  chỗ  nào?  \nMô  hình  CMY:  Là  mô  hình  sử  dụng  các  màu  sơ  cấp  của  sắc  tố  gồm  Cyan  (Xanh  lơ),  Magenta  \n(Hồng\n \ncánh\n \nsen),\n \nvà\n \nYellow\n \n(Vàng).\n \nĐây\n \nlà\n \nmô\n \nhình\n \nmàu\n \ntrừ\n \n(\nsubtractive\n).\n \nKhác  biệt  với  RGB:  ●  Bản  chất:  RGB  là  mô  hình  màu  cộng  ( additive )  dựa  trên  ánh  sáng  (dùng  cho  màn  hình),  \ntrong\n \nkhi\n \nCMY\n \nlà\n \nmô\n \nhình\n \nmàu\n \ntrừ\n \ndựa\n \ntrên\n \nsự\n \nphản\n \nxạ\n \nánh\n \nsáng",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 0,
+            "page_label": "1"
+        }
+    },
+    {
+        "id": 2,
+        "content": "trong\n \nkhi\n \nCMY\n \nlà\n \nmô\n \nhình\n \nmàu\n \ntrừ\n \ndựa\n \ntrên\n \nsự\n \nphản\n \nxạ\n \nánh\n \nsáng\n \ntừ\n \nmực\n \nin\n \n(dùng\n \ncho\n \nin\n \nấn).\n ●  Tạo  màu:  Trong  RGB,  cộng  các  màu  lại  ra  màu  trắng.  Trong  CMY,  trộn  các  màu  lại  sẽ  hấp  \nthụ\n \nánh\n \nsáng\n \nvà\n \ntạo\n \nra\n \nmàu\n \nđen\n \n(lý\n \nthuyết)\n \nhoặc\n \nmàu\n \ntối\n \nđục.\n \n1.3(A)  Tại  sao  người  ta  phát  triển  nên  hệ  màu  HSV  và  HSL?  \nLý  do  phát  triển:  Các  hệ  màu  như  RGB  và  CMY  phụ  thuộc  vào  phần  cứng  và  không  trực  quan  \nvới\n \ncách\n \ncon\n \nngười\n \ncảm\n \nnhận\n \nvà\n \nmô\n \ntả\n \nmàu\n \nsắc.\n \nCon\n \nngười\n \nthường\n \nmô\n \ntả\n \nmàu\n \ntheo\n \nkiểu\n \n\"đỏ\n \nđậm,\n \nđỏ\n \nnhạt,\n \nsáng\n \nhay\n \ntối\"\n \nchứ\n \nkhông\n \nphải\n \nlà\n \nsự\n \nkết\n \nhợp\n \nphần\n \ntrăm\n \ncủa\n \nR,\n \nG,\n \nB.\n \nHSI/HSV\n \nđược\n \nphát\n \ntriển\n \nđể\n \nphù\n \nhợp\n \nvới\n \ntrực\n \ngiác\n \nnày.\n \nÝ  nghĩa  các  thành  phần:  ●  H  (Hue  -  Sắc  thái  màu):  Đại  diện  cho  màu  chủ  đạo  (ví  dụ:  đỏ,  cam,  vàng),  tương  ứng  với  \nbước\n \nsóng\n \nánh\n \nsáng",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 0,
+            "page_label": "1"
+        }
+    },
+    {
+        "id": 3,
+        "content": "hợp\n \nvới\n \ntrực\n \ngiác\n \nnày.\n \nÝ  nghĩa  các  thành  phần:  ●  H  (Hue  -  Sắc  thái  màu):  Đại  diện  cho  màu  chủ  đạo  (ví  dụ:  đỏ,  cam,  vàng),  tương  ứng  với  \nbước\n \nsóng\n \nánh\n \nsáng\n \ntrội.\n ●  S  (Saturation  -  Độ  bão  hòa):  Độ  tinh  khiết  của  màu,  thể  hiện  mức  độ  màu  đó  bị  pha  lẫn  \nvới\n \nánh\n \nsáng\n \ntrắng\n \n(màu\n \ncàng\n \nrực\n \nthì\n \nS\n \ncàng\n \ncao).",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 0,
+            "page_label": "1"
+        }
+    },
+    {
+        "id": 4,
+        "content": "●  I/V/L  (Intensity/Value/Lightness):  Đại  diện  cho  độ  sáng  tối  của  màu  sắc  đó  (thông  tin  \nkhông\n \nmàu).\n \n1.4(A)  Mô  hình  lưu  trữ  raster  là  gì?  Phân  biệt  với  vector.  \nMô  hình  raster:  Ảnh  kỹ  thuật  số  được  định  nghĩa  là  một  hàm  $f(x,  y)$  đã  được  rời  rạc  hóa  cả  \nvề\n \ntoạ\n \nđộ\n \nkhông\n \ngian\n \nvà\n \nđộ\n \nsáng.\n \nNó\n \nbao\n \ngồm\n \nmột\n \nsố\n \nlượng\n \nhữu\n \nhạn\n \ncác\n \nphần\n \ntử\n \ngọi\n \nlà\n \npixels\n,\n \nmỗi\n \nphần\n \ntử\n \ncó\n \nvị\n \ntrí\n \nvà\n \ngiá\n \ntrị\n \ncụ\n \nthể.\n \nKhác  biệt  với  vector:  ●  Raster:  Lưu  trữ  dưới  dạng  lưới  điểm  ảnh.  Độ  phân  giải  cố  định,  khi  phóng  to  bị  vỡ  hạt  \n(\npixelation\n).\n \nThích\n \nhợp\n \ncho\n \nảnh\n \nchụp,\n \ny\n \ntế,\n \nvệ\n \ntinh.\n ●  Vector:  Lưu  trữ  dưới  dạng  công  thức  toán  học  (đường  thẳng,  cong).  Phóng  to  vô  hạn  \nkhông\n \nmất\n \nnét.\n \nThích\n \nhợp\n \ncho\n \nlogo,\n \nbản\n \nvẽ\n \nkỹ\n \nthuật,\n \nfont\n \nchữ.\n \n1.5(A)  Tại  sao  kỹ  thuật  nửa  cường  độ  (halftone)  được  dùng  trong  in  ấn?",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 1,
+            "page_label": "2"
+        }
+    },
+    {
+        "id": 5,
+        "content": "không\n \nmất\n \nnét.\n \nThích\n \nhợp\n \ncho\n \nlogo,\n \nbản\n \nvẽ\n \nkỹ\n \nthuật,\n \nfont\n \nchữ.\n \n1.5(A)  Tại  sao  kỹ  thuật  nửa  cường  độ  (halftone)  được  dùng  trong  in  ấn?  \nLý  do:  Các  thiết  bị  in  ấn  thường  chỉ  có  khả  năng  in  hai  trạng  thái:  có  mực  (đen)  hoặc  không  \nmực\n \n(trắng),\n \nkhông\n \nthể\n \nin\n \ntrực\n \ntiếp\n \ncác\n \nmức\n \nxám\n \nliên\n \ntục.\n \nÝ  tưởng  cơ  bản:  Sử  dụng  các  chấm  ( dots )  với  kích  thước  hoặc  mật  độ  khác  nhau  để  mô  \nphỏng\n \nmức\n \nxám.\n \nMắt\n \nngười\n \nsẽ\n \ntích\n \nhợp\n \ncác\n \nchấm\n \nđen\n \nvà\n \nkhoảng\n \ntrắng\n \nlân\n \ncận\n \nđể\n \ncảm\n \nnhận\n \nthành\n \nmột\n \nmức\n \nxám\n \ntrung\n \nbình.\n \n1.6(A)  Kỹ  thuật  in  ảnh  đa  cấp  xám  với  mực  đen?  Vai  trò  của  khuếch  tán  \nlỗi.\n \nKỹ  thuật:  Sử  dụng  Halftoning  (Halftoning  kỹ  thuật  số).  \nVai  trò  của  Khuếch  tán  lỗi  (Error  Diffusion):  Khi  chuyển  đổi  một  pixel  từ  đa  cấp  xám  sang  nhị  phân,  sẽ  sinh  ra  sai  số  (lỗi  lượng  tử  hóa).  \nThay\n \nvì\n \nbỏ\n \nđi,\n \nlỗi",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 1,
+            "page_label": "2"
+        }
+    },
+    {
+        "id": 6,
+        "content": "Vai  trò  của  Khuếch  tán  lỗi  (Error  Diffusion):  Khi  chuyển  đổi  một  pixel  từ  đa  cấp  xám  sang  nhị  phân,  sẽ  sinh  ra  sai  số  (lỗi  lượng  tử  hóa).  \nThay\n \nvì\n \nbỏ\n \nđi,\n \nlỗi\n \nnày\n \nđược\n \ncộng\n \ndồn\n \nsang\n \ncác\n \npixel\n \nlân\n \ncận\n \nchưa\n \nxử\n \nlý.\n ●  Ưu  điểm:  Giúp  bảo  toàn  giá  trị  cường  độ  trung  bình,  tạo  chuyển  tiếp  mượt  mà,  tránh  hiện  \ntượng\n \nmảng\n \nđen/trắng\n \ngay\n \ngắt\n \nhoặc\n \nđường\n \nviền\n \ngiả\n \n(\ncontouring\n)\n \nthường\n \nthấy\n \nở\n \nkỹ\n \nthuật\n \ntách\n \nngưỡng\n \nđơn\n \ngiản.\n \n1.7(A)  Khuếch  tán  lỗi  là  gì?  1  chiều  khác  2  chiều  thế  nào?  \nĐịnh  nghĩa:  Là  quá  trình  phân  phối  sai  số  lượng  tử  hóa  của  pixel  hiện  tại  cho  các  pixel  lân  cận  \nđể\n \ntrung\n \nbình\n \ncộng\n \nsai\n \nsố\n \ncục\n \nbộ\n \nxấp\n \nxỉ\n \n0.\n \nPhân  biệt:  ●  1  chiều:  Chỉ  đẩy  lỗi  sang  pixel  tiếp  theo  trên  cùng  hàng  quét  $\\rightarrow$  Dễ  tạo  vệt  sọc  \nngang/dọc.",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 1,
+            "page_label": "2"
+        }
+    },
+    {
+        "id": 7,
+        "content": "trung\n \nbình\n \ncộng\n \nsai\n \nsố\n \ncục\n \nbộ\n \nxấp\n \nxỉ\n \n0.\n \nPhân  biệt:  ●  1  chiều:  Chỉ  đẩy  lỗi  sang  pixel  tiếp  theo  trên  cùng  hàng  quét  $\\rightarrow$  Dễ  tạo  vệt  sọc  \nngang/dọc.\n ●  2  chiều  (vd:  Floyd-Steinberg):  Đẩy  lỗi  sang  các  pixel  bên  phải,  bên  dưới,  và  chéo  dưới",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 1,
+            "page_label": "2"
+        }
+    },
+    {
+        "id": 8,
+        "content": "$\\rightarrow$  Loại  bỏ  vệt  sọc,  tạo  mô  hình  nhiễu  dễ  chịu  hơn  cho  mắt.  \n1.8(B)  Tăng  giảm  độ  sáng  của  ảnh  đa  mức  xám  như  thế  nào?  \n●  Cách  làm:  Cộng  hoặc  trừ  một  hằng  số  $C$  vào  giá  trị  mọi  pixel:  $g(x,y)  =  f(x,y)  \\pm  C$.  ●  Toán  tử:  Biến  đổi  cường  độ  ( Intensity  Transformation )  hoặc  toán  tử  điểm  ( Point  \noperation\n).\n \n1.9(B)  Cân  bằng  tần  suất  (Histogram  Equalization)  là  gì?  Tại  sao  dùng?  \nLà  gì:  Kỹ  thuật  biến  đổi  cường  độ  pixel  sao  cho  biểu  đồ  tần  suất  (histogram)  đầu  ra  trở  nên  \nđồng\n \nđều\n \n(phẳng).\n Tại  sao:  Để  tăng  độ  tương  phản  toàn  cục,  giúp  chi  tiết  trong  vùng  tối  hoặc  sáng  trở  nên  rõ  \nràng\n \nhơn.\n \n1.10(C)  Biến  đổi  cửa  sổ  di  chuyển  sử  dụng  toán  tử  gì?  \nSử  dụng  toán  tử  Tích  chập  (Convolution)  hoặc  Tương  quan  (Correlation)  không  gian.  Giá  \ntrị\n \npixel\n \nmới\n \nlà\n \ntổng\n \ncó\n \ntrọng\n \nsố\n \ncủa\n \ncác\n \npixel\n \ntrong\n \ncửa\n \nsổ\n \n(kernel).",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 2,
+            "page_label": "3"
+        }
+    },
+    {
+        "id": 9,
+        "content": "trị\n \npixel\n \nmới\n \nlà\n \ntổng\n \ncó\n \ntrọng\n \nsố\n \ncủa\n \ncác\n \npixel\n \ntrong\n \ncửa\n \nsổ\n \n(kernel).\n \n1.11(B)  Mô  hình  nhiễu  là  gì?  Phát  hiện  biên  trực  tiếp.  \n●  Mô  hình  nhiễu:  Biểu  diễn  toán  học  mô  phỏng  sự  suy  biến  của  ảnh  (Gaussian,  muối  tiêu...)  \nđể\n \nthiết\n \nkế\n \nbộ\n \nlọc\n \nkhôi\n \nphục.\n ●  Phát  hiện  biên  trực  tiếp:  Tính  đạo  hàm  (sự  thay  đổi)  của  ảnh  bằng  các  mặt  nạ  Gradient  \nnhư\n \nSobel,\n \nPrewitt,\n \nRoberts\n \n(đạo\n \nhàm\n \nbậc\n \n1).\n \n1.12(D)  Phát  hiện  biên  gián  tiếp  là  gì?  Ví  dụ.  \nThay  vì  tìm  biên  từ  đạo  hàm  bậc  1,  phương  pháp  này  tìm  điểm  zero-crossing  (cắt  không)  của  \nđạo\n \nhàm\n \nbậc\n \n2\n \nhoặc\n \nphân\n \nvùng\n \nảnh\n \ntrước\n \nrồi\n \nlấy\n \nđường\n \nbao.\n ●  Ví  dụ:  Marr-Hildreth  (Laplacian  of  Gaussian  -  LoG).  \n1.13(D)  Phân  biệt  biên  và  nhiễu?",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 2,
+            "page_label": "3"
+        }
+    },
+    {
+        "id": 10,
+        "content": "đạo\n \nhàm\n \nbậc\n \n2\n \nhoặc\n \nphân\n \nvùng\n \nảnh\n \ntrước\n \nrồi\n \nlấy\n \nđường\n \nbao.\n ●  Ví  dụ:  Marr-Hildreth  (Laplacian  of  Gaussian  -  LoG).  \n1.13(D)  Phân  biệt  biên  và  nhiễu?  \n●  Giống:  Đều  là  thành  phần  tần  số  cao  (thay  đổi  đột  ngột).  ●  Khác:  Nhiễu  là  ngẫu  nhiên  và  cô  lập;  Biên  có  cấu  trúc  liên  tục.  ●  Xử  lý:  Cần  làm  trơn  (smoothing)  để  khử  nhiễu  trước  khi  tính  đạo  hàm.  Đạo  hàm  bậc  2  rất  \nnhạy\n \nvới\n \nnhiễu\n \nnên\n \nbắt\n \nbuộc\n \nphải\n \nkhử\n \nnhiễu\n \nkỹ.\n \n1.14(D)  Tại  sao  phải  nén  ảnh?  Nén  dữ  liệu  và  nén  ảnh  khác  nhau  cơ  bản  \nđiểm\n \ngì?\n \n●  Tại  sao:  Giảm  dung  lượng  lưu  trữ  và  băng  thông.  ●  Khác  biệt:  ○  Nén  dữ  liệu:  Phải  là  Lossless  (không  tổn  hao)  để  bảo  toàn  thông  tin  100%.  ○  Nén  ảnh:  Thường  chấp  nhận  Lossy  (có  tổn  hao)  vì  mắt  người  có  sự  \"dư  thừa  tâm  lý  \nthị\n \ngiác\",\n \nkhông\n \nnhận\n \nra\n \ncác\n \nsai\n \nlệch\n \nnhỏ\n \nhoặc\n \ntần\n \nsố\n \ncao.",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 2,
+            "page_label": "3"
+        }
+    },
+    {
+        "id": 11,
+        "content": "Phần  2:  Các  Kỹ  thuật  Nâng  cao  &  Thuật  toán  2.1(A)  Phối  màu  cộng  và  Phối  màu  trừ.  \n●  Phối  màu  cộng  (Additive):  Cộng  ánh  sáng  màu  (R,  G,  B).  Tổng  hợp  lại  ra  màu  Trắng.  \nDùng\n \ncho\n \nmàn\n \nhình,\n \nTV.\n ●  Phối  màu  trừ  (Subtractive):  Trừ/hấp  thụ  ánh  sáng  (C,  M,  Y).  Tổng  hợp  lại  ra  màu  Đen.  \nDùng\n \ncho\n \nin\n \nấn,\n \nhội\n \nhọa.\n \n2.2(A)  Chuyển  đổi  RGB  sang  CMY.  \nDo  mực  in  hấp  thụ  màu  đối  nghịch  và  phản  xạ  màu  ta  thấy,  công  thức  chuyển  đổi  (với  giá  trị  \nchuẩn\n \nhóa\n \n[0,1])\n \nlà:\n \n$$\\begin{bmatrix}  C  \\\\  M  \\\\  Y  \\end{bmatrix}  =  \\begin{bmatrix}  1  \\\\  1  \\\\  1  \\end{bmatrix}  -  \n\\begin{bmatrix}\n \nR\n \n\\\\\n \nG\n \n\\\\\n \nB\n \n\\end{bmatrix}$$\n \n2.3(A)  Tại  sao  vẫn  dùng  Raster  thay  vì  Vector?  \nDù  Vector  không  bị  vỡ  khi  phóng  to,  nhưng  Raster  là  bắt  buộc  để  biểu  diễn  ảnh  thực  tế  \n(phong\n \ncảnh,\n \nchân\n \ndung)\n \n-\n \nnơi\n \nmàu\n \nsắc\n \nvà\n \ncường\n \nđộ\n \nsáng\n \nthay\n \nđổi\n \nliên\n \ntục,\n \nhỗn",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 3,
+            "page_label": "4"
+        }
+    },
+    {
+        "id": 12,
+        "content": "(phong\n \ncảnh,\n \nchân\n \ndung)\n \n-\n \nnơi\n \nmàu\n \nsắc\n \nvà\n \ncường\n \nđộ\n \nsáng\n \nthay\n \nđổi\n \nliên\n \ntục,\n \nhỗn\n \nloạn\n \nvà\n \ntinh\n \ntế\n \ntại\n \ntừng\n \nđiểm\n \nảnh\n \n(\"continuous\n \ntone\")\n \nmà\n \nvector\n \nkhông\n \nthể\n \nmô\n \ntả\n \nhiệu\n \nquả.\n \n2.4(C)  So  sánh  các  bộ  lọc:  Trung  vị,  Trung  bình,  K  giá  trị  gần  nhất.  \n●  Trung  bình  (Mean):  Làm  trơn,  giảm  nhiễu  nhưng  làm  mờ  biên .  ●  Trung  vị  (Median):  Loại  bỏ  cực  tốt  nhiễu  muối  tiêu  và  bảo  toàn  biên  tốt  hơn  trung  \nbình.\n ●  K  giá  trị  gần  nhất:  Chỉ  lấy  trung  bình  các  pixel  có  cường  độ  gần  giống  pixel  tâm.  Giúp  \nkhử\n \nnhiễu\n \nnhưng\n \ngiữ\n \nđộ\n \nsắc\n \nnét\n \ncủa\n \ncạnh\n \nrất\n \ntốt.\n \n2.5(D)  Nguyên  lý  phát  hiện  biên  &  Ma  trận  (-1  1).  \n●  Nguyên  lý:  Biên  là  nơi  đạo  hàm  bậc  1  đạt  cực  trị.  ●  Ma  trận  (-1  1):  Xấp  xỉ  đạo  hàm  riêng  theo  hướng  ngang  (trục  x),  tính  hiệu  số  $f(x+1)  -  \nf(x)$\n \nđể\n \nphát\n \nhiện\n \nbiên\n \ndọc.",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 3,
+            "page_label": "4"
+        }
+    },
+    {
+        "id": 13,
+        "content": "f(x)$\n \nđể\n \nphát\n \nhiện\n \nbiên\n \ndọc.\n \n2.6(D)  Ba  loại  ma  trận  tìm  biên:  Roberts,  Prewitt,  Sobel.  \n1.  Roberts  ( $2  \\times  2$ ):  Nhanh  nhưng  nhạy  nhiễu.  2.  Prewitt  ( $3  \\times  3$ ):  Kết  hợp  làm  trơn  trung  bình  để  giảm  nhiễu.  3.  Sobel  ( $3  \\times  3$ ):  Giống  Prewitt  nhưng  trọng  số  trung  tâm  cao  hơn  (làm  trơn  \nGaussian),\n \nnhấn\n \nmạnh\n \nđiểm\n \nảnh\n \ngần\n \nnhất.\n ●  Các  bước  sau  đó:  Tính  biên  độ  gradient  $M$,  tách  ngưỡng  $T$,  làm  mảnh  biên.  \n2.7(D)  Thuật  toán  Canny  &  Bước  quan  trọng  nhất.  \nCác  bước:  Làm  trơn  (Gaussian)  $\\rightarrow$  Tính  Gradient  $\\rightarrow$  Triệt  tiêu  phi  cực",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 3,
+            "page_label": "4"
+        }
+    },
+    {
+        "id": 14,
+        "content": "đại  $\\rightarrow$  Tách  ngưỡng  trễ  (Hysteresis).  ●  Quan  trọng  nhất:  Tách  ngưỡng  trễ  (Hysteresis) .  Nó  dùng  2  ngưỡng  (cao/thấp)  để  nối  \ncác\n \nbiên\n \nyếu\n \nvào\n \nbiên\n \nmạnh,\n \ngiúp\n \nbiên\n \nliền\n \nmạch\n \nmà\n \nkhông\n \nbị\n \nnhiễu.\n \n2.8(D)  Phân  vùng  đối  xứng  nền  (Background  Symmetry).  \nDựa  trên  giả  thiết  đỉnh  histogram  của  nền  có  dạng  Gaussian  đối  xứng .  Nếu  bị  che  khuất,  \nthuật\n \ntoán\n \nlấy\n \nđối\n \nxứng\n \nphần\n \nhistogram\n \n\"sạch\"\n \nđể\n \ntái\n \ntạo\n \ntrọn\n \nvẹn\n \nphân\n \nbố\n \nnền,\n \ntừ\n \nđó\n \ntìm\n \nngưỡng\n \ntách\n \ntối\n \nưu.\n \n2.9(D)  Thuật  toán  tam  giác  (Triangle/Zack  algorithm).  \nVẽ  đường  thẳng  từ  đỉnh  cao  nhất  đến  đuôi  histogram.  Ngưỡng  là  điểm  trên  histogram  có  \nkhoảng\n \ncách\n \nvuông\n \ngóc\n \nlớn\n \nnhất\n \ntới\n \nđường\n \nthẳng\n \nnày.\n \nTốt\n \ncho\n \nhistogram\n \nđơn\n \nmode\n \n(unimodal).\n \n2.10(D)  Tách  cây  tứ  phân  và  hợp  (Split  and  Merge).",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 4,
+            "page_label": "5"
+        }
+    },
+    {
+        "id": 15,
+        "content": "khoảng\n \ncách\n \nvuông\n \ngóc\n \nlớn\n \nnhất\n \ntới\n \nđường\n \nthẳng\n \nnày.\n \nTốt\n \ncho\n \nhistogram\n \nđơn\n \nmode\n \n(unimodal).\n \n2.10(D)  Tách  cây  tứ  phân  và  hợp  (Split  and  Merge).  \nChia  ảnh  đệ  quy  thành  4  phần  nếu  vùng  không  đồng  nhất  (dựa  trên  vị  từ  $P$).  Sau  đó  gộp  \n(merge)\n \ncác\n \nvùng\n \nkề\n \nnhau\n \nnếu\n \nthỏa\n \nmãn\n \ntính\n \nđồng\n \nnhất.\n \n2.11(D)  Kỹ  thuật  K-means.  \nPhân  cụm  không  giám  sát.  Chia  dữ  liệu  thành  $K$  nhóm  sao  cho  tổng  bình  phương  khoảng  \ncách\n \nđến\n \ntâm\n \ncụm\n \nlà\n \nnhỏ\n \nnhất.\n \nNhạy\n \ncảm\n \nvới\n \nviệc\n \nkhởi\n \ntạo\n \ntâm\n \ncụm\n \nban\n \nđầu.\n \n2.12(D)  Kỹ  thuật  K  láng  giềng  (KNN).  \nPhân  loại  có  giám  sát.  Một  điểm  mới  được  phân  vào  lớp  phổ  biến  nhất  trong  $K$  láng  giềng  \ngần\n \nnhất\n \ncủa\n \nnó.\n \n2.13(D)  Mạng  Hopfield.  \nMạng  nơ-ron  hồi  quy,  kết  nối  đầy  đủ,  trọng  số  đối  xứng.  Hoạt  động  như  bộ  nhớ  liên  kết  \n(associative\n \nmemory),\n \ncó\n \nkhả\n \nnăng\n \nkhôi\n \nphục\n \nmẫu\n \nhoàn\n \nchỉnh",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 4,
+            "page_label": "5"
+        }
+    },
+    {
+        "id": 16,
+        "content": "Mạng  nơ-ron  hồi  quy,  kết  nối  đầy  đủ,  trọng  số  đối  xứng.  Hoạt  động  như  bộ  nhớ  liên  kết  \n(associative\n \nmemory),\n \ncó\n \nkhả\n \nnăng\n \nkhôi\n \nphục\n \nmẫu\n \nhoàn\n \nchỉnh\n \ntừ\n \nmẫu\n \nbị\n \nnhiễu\n \nhoặc\n \nthiếu\n \nbằng\n \ncách\n \ntối\n \nthiểu\n \nhóa\n \nhàm\n \nnăng\n \nlượng.\n \n2.14(D)  Mạng  Kohonen  (SOM).  \nMạng  tự  tổ  chức  theo  cơ  chế  học  cạnh  tranh  (Competitive  learning).  Các  nơ-ron  tự  sắp  xếp  \nthành\n \nbản\n \nđồ\n \ntô-pô,\n \nmô\n \nphỏng\n \ncách\n \nnão\n \nbộ\n \ntổ\n \nchức\n \nthông\n \ntin\n \ncảm\n \ngiác\n \n(các\n \nmẫu\n \ngiống\n \nnhau\n \nkích\n \nhoạt\n \nnơ-ron\n \ngần\n \nnhau).\n \n2.15(D)  Mã  hóa  loạt  dài  (RLC).  \nNén  không  tổn  hao  bằng  cách  thay  chuỗi  giá  trị  lặp  lại  bằng  cặp  (giá  trị,  độ  dài).",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 4,
+            "page_label": "5"
+        }
+    },
+    {
+        "id": 17,
+        "content": "●  Khi  nào  tăng  kích  thước:  Khi  dữ  liệu  thay  đổi  liên  tục,  không  có  chuỗi  lặp  (độ  dài  chuỗi  =  \n1),\n \nkhiến\n \ndữ\n \nliệu\n \nnén\n \nlớn\n \ngấp\n \nđôi\n \n(do\n \nphải\n \nlưu\n \nthêm\n \nsố\n \nđếm\n \n\"1\").\n \n2.16(D)  Biến  đổi  Cosin  (DCT)  trong  JPEG.  \n●  Mục  đích:  Nén  năng  lượng,  gom  thông  tin  quan  trọng  (tần  số  thấp)  vào  góc  ma  trận.  ●  Gây  mất  dữ  liệu:  Tại  bước  Lượng  tử  hóa  (Quantization) .  Việc  chia  và  làm  tròn  số  \nnguyên\n \nkhiến\n \nthông\n \ntin\n \nbị\n \nmất\n \nvĩnh\n \nviễn\n \n(Lossy).",
+        "metadata": {
+            "producer": "Skia/PDF m147 Google Docs Renderer",
+            "creator": "PyPDF",
+            "creationdate": "",
+            "title": "1.1(A) Mô hình màu là gì? Liệt kê một vài mô hình...",
+            "source": "file.pdf",
+            "total_pages": 6,
+            "page": 5,
+            "page_label": "6"
+        }
+    }
+]
