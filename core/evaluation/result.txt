@@ -3,7 +3,7 @@ BM25 (Lexical):
    @Top-5 | Hit Rate: 0.7500 | Precision: 0.2280 | Recall: 0.3632 | F1: 0.2697 | MAP: 0.2842 | MRR: 0.5882 | NDCG: 0.3771
    @Top-7 | Hit Rate: 0.8050 | Precision: 0.1821 | Recall: 0.3974 | F1: 0.2417 | MAP: 0.2942 | MRR: 0.5971 | NDCG: 0.3955
 
-Vector (Semantic):
+anhtld/VN-Law-Embedding (Semantic):
    @Top-3 | Hit Rate: 0.2850 | Precision: 0.1283 | Recall: 0.1321 | F1: 0.1244 | MAP: 0.1217 | MRR: 0.2200 | NDCG: 0.1539
    @Top-5 | Hit Rate: 0.3650 | Precision: 0.1050 | Recall: 0.1749 | F1: 0.1264 | MAP: 0.1242 | MRR: 0.2390 | NDCG: 0.1665
    @Top-7 | Hit Rate: 0.4250 | Precision: 0.0914 | Recall: 0.2094 | F1: 0.1232 | MAP: 0.1329 | MRR: 0.2486 | NDCG: 0.1839

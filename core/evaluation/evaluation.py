@@ -110,7 +110,7 @@ if __name__ == "__main__":
     print("Bắt đầu đánh giá...")
     bm25 = BM25Retriever("evaluation/corpus.json")
     semantic = SemanticRetriever("evaluation/corpus.json")
-    hybrid = EnsembleRetriever([bm25, semantic], pool_size=50)
+    hybrid = EnsembleRetriever([bm25, semantic], pool_size=15)
     
     models = {
         "BM25 (Lexical)": bm25,
@@ -123,7 +123,7 @@ if __name__ == "__main__":
     benchmark_results = {}
     for name, model in models.items():
         print(f"\n[ Đang chạy test cho: {name} ]")
-        benchmark_results[name] = evaluate_retriever(model, "evaluation/ok.csv", k_values=k_eval)
+        benchmark_results[name] = evaluate_retriever(model, "evaluation/val.csv", k_values=k_eval)
         
     for name, res in benchmark_results.items():
         print(f"\n{name}:")
