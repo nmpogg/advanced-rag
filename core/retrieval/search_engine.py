@@ -23,10 +23,10 @@ def semantic_search(query: str, vector_db, top_k: int) -> list:
     return semantic_docs
 
 # hàm này có thể tách ra làm nhiều kĩ thuật truy xuất, ở đây ví dụ với BM25
-def keyword_search(query: str, json_path: str, top_k: int) -> list:
+def keyword_search(query: str, corpus: str, top_k: int) -> list:
     
     #demo with json file
-    with open(json_path, 'r', encoding='utf-8') as f:
+    with open(corpus, 'r', encoding='utf-8') as f:
         chunks_data = json.load(f)
     
     corpus = [item['content'] for item in chunks_data]

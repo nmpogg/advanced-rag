@@ -4,7 +4,7 @@ Global configuration settings cho LangChain RAG system với Web Search.
 import os
 
 # ========== API & Environment ==========
-os.environ["GOOGLE_API_KEY"] = "your_google_api_key_here"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyB_PxKDGTckXvNPGkVIENuibeJv26xUV_k"
 
 # ========== Model Configuration ==========
 EMBEDDING_MODEL = "bkai-foundation-models/vietnamese-bi-encoder"

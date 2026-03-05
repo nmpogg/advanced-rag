@@ -131,7 +131,7 @@ class LawPDFProcessor:
 
 
 if __name__ == "__main__":
-    pdf_path = "Luật-35-2024-QH15.pdf" 
+    pdf_path = "Nghị-định-168-2024-NĐ-CP.pdf" 
 
     processor = LawPDFProcessor(pdf_path)
     
