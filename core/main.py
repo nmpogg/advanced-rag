@@ -2,9 +2,9 @@
 Main RAG Pipeline - Orchestration với all modules.
 """
 from config import JSON_PATH
-from ingestion import load_vector_db, process_and_index_documents
+from indexing import load_vector_db, process_and_index_documents
 from retrieval import hybrid_search_and_rerank
-from generation import (
+from rag import (
     route_query,
     reflect_query,
     generate_chitchat_response,

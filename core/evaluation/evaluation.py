@@ -4,8 +4,8 @@ from typing import List, Dict
 from tqdm import tqdm
 
 from retrieval.base import BaseRetriever
-from retrieval.lexical import BM25Retriever
-from retrieval.semantic import SemanticRetriever
+from core.retrieval.lexical.lexical import BM25Retriever
+from core.retrieval.semantic.semantic import SemanticRetriever
 from retrieval.ensemble import EnsembleRetriever
 
 def hit_k(true_cids: List[int], retrieved_cids: List[int], k: int) -> int:

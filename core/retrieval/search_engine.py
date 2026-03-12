@@ -3,7 +3,7 @@ from rank_bm25 import BM25Okapi
 from sentence_transformers import CrossEncoder
 
 from config import RERANKER_MODEL, TOP_K_INITIAL, TOP_K_FINAL, JSON_PATH
-from ingestion import load_vector_db
+from indexing import load_vector_db
 
 reranker_model = None # for lazy loading
 

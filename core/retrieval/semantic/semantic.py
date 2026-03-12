@@ -12,7 +12,7 @@ class SemanticRetriever(BaseRetriever):
         self.client = chromadb.PersistentClient(path=persist_directory)
         
         self.embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-            model_name="anhtld/VN-Law-Embedding" 
+            model_name="namdp-ptit/ViDense" 
         )
         
         self.collection = self.client.get_or_create_collection(

@@ -2,8 +2,8 @@ from typing import List, Dict, Any
 
 # Import class cha 
 from retrieval.base import BaseRetriever
-from retrieval.lexical import BM25Retriever
-from retrieval.semantic import SemanticRetriever
+from core.retrieval.lexical.lexical import BM25Retriever
+from core.retrieval.semantic.semantic import SemanticRetriever
 
 class EnsembleRetriever(BaseRetriever):
     def __init__(self, retrievers: List[BaseRetriever], rrf_k: int = 60, pool_size: int = 15):
