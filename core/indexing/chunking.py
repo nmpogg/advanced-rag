@@ -139,6 +139,6 @@ if __name__ == "__main__":
     
     processor.parse_structure()
     
-    processor.save_to_json("corpus.json")
+    processor.save_to_json("data/processed/corpus.json")
     
     processor.json_to_csv("corpus.json", "corpus.csv")
