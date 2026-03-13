@@ -8,7 +8,6 @@ from llm.llm_client import LLMClient
 from llm.prompts import build_user_prompt, LEGAL_SYSTEM_PROMPT
 from rag.context_builder import ContextBuilder
 
-# Import module Router gộp mới
 from rag.query_router import QueryRouter
 from memory.chat_history import ChatHistory
 
@@ -62,16 +61,19 @@ class LegalRAGPipeline:
                 "processing_time": time.time() - total_start_time
             }
 
-        standalone_query = processed_result
-        print(f"\n[Legal] Truy xuất tài liệu với Standalone Query: '{standalone_query}'")
+        query_reflection = processed_result
+        print(f"\n[Legal] Truy xuất tài liệu với Query Reflection: '{query_reflection}'")
         
         # Retrieval & Reranking
-        retrieved_docs = self.retriever.retrieve(query=standalone_query, top_k=self.top_k_retrieve)
-        best_docs = self.reranker.rerank(query=standalone_query, documents=retrieved_docs, top_k=self.top_k_rerank)
+        retrieved_docs = self.retriever.retrieve(query=query_reflection, top_k=self.top_k_retrieve)
+        print(f"[Legal] Danh sách tài liệu truy xuất được:")
+        for i, doc in enumerate(retrieved_docs):
+            print(f"  {i+1}. [{doc['metadata']['law_name']} - {doc['metadata']['article']}] (Score: {doc.get('score', 'N/A'):.4f})")
+        best_docs = self.reranker.rerank(query=query_reflection, documents=retrieved_docs, top_k=self.top_k_rerank)
 
         print("\n[Legal] Đang gọi LLM sinh câu trả lời...")
         formatted_context = self.context_builder.build_context(best_docs)
-        user_prompt = build_user_prompt(query=standalone_query, formatted_context=formatted_context)
+        user_prompt = build_user_prompt(query=query_reflection, formatted_context=formatted_context)
         
         answer = self.llm_client.generate(
             system_prompt=LEGAL_SYSTEM_PROMPT,
@@ -86,7 +88,7 @@ class LegalRAGPipeline:
         
         return {
             "query": query,
-            "standalone_query": standalone_query,
+            "query_reflection": query_reflection,
             "answer": answer,
             "sources": best_docs,
             "type": "legal",
