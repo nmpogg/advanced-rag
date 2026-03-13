@@ -4,8 +4,9 @@ import json
 import pandas as pd
 
 class LawPDFProcessor:
-    def __init__(self, links):
+    def __init__(self, links, name):
         self.links = links
+        self.name = name
         self.full_text = ""
         self.chunks = []
         self.count = 0
@@ -67,11 +68,10 @@ class LawPDFProcessor:
                     clause_clean = self.clean_text(clause)
                     clause_num_match = re.match(r'(\d+)\.', clause.strip())
                     clause_num = clause_num_match.group(1) if clause_num_match else ""
+
+                    clause_fn = re.sub(r'^\d+\.\s*', '', clause_clean)
                     
-                    # Luật > Tên Điều > Nội dung khoản
-                    enriched_content = f"{art_title}. Khoản {clause_clean}"
-                    
-                    self.add_chunk(enriched_content, art_title, "clause", clause_num)
+                    self.add_chunk(clause_fn, art_title, "clause", clause_num)
 
             else:
                 
@@ -86,9 +86,10 @@ class LawPDFProcessor:
                 
                 art_title = self.clean_text(title_part)
                 content_clean = self.clean_text(art_raw)
+
+                article_fn = re.sub(r'^Điều\s+\d+\.\s*', '', content_clean)
                 
-                enriched_content = f"{art_title}: {content_clean}"
-                self.add_chunk(enriched_content, art_title, "article")
+                self.add_chunk(article_fn, art_title, "article")
 
         print(f"Đã xử lý {count} điều luật.")
 
@@ -106,6 +107,7 @@ class LawPDFProcessor:
             "cid": chunk_id,
             "content": content,
             "metadata": {
+                "law_name": self.name,
                 "article": article_title,
                 "article_num": art_num,
                 "clause_num": clause_num,
@@ -131,9 +133,9 @@ class LawPDFProcessor:
 
 
 if __name__ == "__main__":
-    pdf_path = "Nghị-định-168-2024-NĐ-CP.pdf" 
+    pdf_path = "data/raw/Nghị-định-168-2024-NĐ-CP.pdf" 
 
-    processor = LawPDFProcessor(pdf_path)
+    processor = LawPDFProcessor(pdf_path, "Nghị định 168/2024/NĐ-CP")
     
     processor.extract_text_from_pdf()
     
@@ -141,4 +143,4 @@ if __name__ == "__main__":
     
     processor.save_to_json("data/processed/corpus.json")
     
-    processor.json_to_csv("corpus.json", "corpus.csv")
+    processor.json_to_csv("data/processed/corpus.json", "data/processed/corpus.csv")
