@@ -8,7 +8,7 @@ from llm.prompts import ROUTER_SYSTEM_PROMPT, build_router_user_prompt
 class QueryRouter:
     def __init__(self, llm_client: LLMClient):
         self.llm = llm_client
-        print("[QueryRouter] Đã khởi tạo hệ thống định tuyến (Gộp Chitchat & Reflection).")
+        print("[QueryRouter] Đã khởi tạo hệ thống định tuyến.")
 
     def process_query(self, current_query: str, chat_history: List[Dict[str, str]]) -> Tuple[str, str]:
         """
@@ -49,14 +49,14 @@ class QueryRouter:
             intent = parsed_data.get("intent", "LEGAL").upper()
             result = parsed_data.get("result", current_query)
             
-            print(f"-> Intent phát hiện: {intent}")
-            print(f"-> Kết quả xử lý  : {result}")
+            print(f"Intent: {intent}")
+            print(f"Output: {result}")
             
             return intent, result
             
         except json.JSONDecodeError as e:
             print(f"[Cảnh báo QueryRouter] Lỗi parse JSON từ LLM: {e}. Fallback về luồng LEGAL.")
-            # Fallback an toàn: Coi như là câu hỏi luật và không rewrite
+            # Fallback
             return "LEGAL", current_query
             
         except Exception as e:
@@ -65,7 +65,7 @@ class QueryRouter:
 
 if __name__ == "__main__":
     # TEST
-    llm = LLMClient(api_key=os.environ.get("OPENAI_API_KEY"), model_name="gpt-3.5-turbo", temperature=0.0)
+    llm = LLMClient(api_key=os.environ.get("GEMINI_API_KEY"), model_name="gemini-2.5-flash", temperature=0.0)
     router = QueryRouter(llm)
     
     mock_history = [
