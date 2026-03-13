@@ -5,5 +5,9 @@ venv/
 *.xlsx
 *.csv
 *.pdf
+*.pkl
+*.json
+*.npy
 .vscode/
 core/config/settings.py
+note.md
