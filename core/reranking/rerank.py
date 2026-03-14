@@ -22,8 +22,7 @@ class CrossEncoderReranker:
         print(f"Đang khởi tạo CrossEncoderReranker với mô hình: {model_name}...")
         
         self.model = CrossEncoder(model_name, device=device)
-        print("-> Đã load mô hình Reranker: {model_name} thành công.")
-
+        
     def rerank(self, query: str, documents: List[Dict[str, Any]], top_k: int = 5) -> List[Dict[str, Any]]:
         """
         Thực hiện (rerank) danh sách các văn bản đã được truy xuất.
